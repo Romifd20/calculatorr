@@ -49,28 +49,29 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/calc2"
+
+            android:background="@drawable/textov"
             android:backgroundTint="#716D66"
             android:text="9" />
 
         <Button
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:background="@drawable/calc2"
+            android:background="@drawable/textov"
             android:layout_height="wrap_content"
             android:text="8"
             android:onClick="onNumberClick"/>
         <Button
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:background="@drawable/calc2"
+            android:background="@drawable/textov"
             android:layout_height="wrap_content"
             android:text="7"
             android:onClick="onNumberClick"/>
         <Button
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:background="@drawable/calc2"
+            android:background="@drawable/textov"
             android:layout_height="wrap_content"
             android:text="/"
             android:onClick="onOperationClick"/>
@@ -86,28 +87,28 @@
         <Button
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:background="@drawable/calc2"
+            android:background="@drawable/textov"
             android:layout_height="wrap_content"
             android:text="6"
             android:onClick="onNumberClick"/>
         <Button
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:background="@drawable/calc2"
+            android:background="@drawable/textov"
             android:layout_height="wrap_content"
             android:text="5"
             android:onClick="onNumberClick"/>
         <Button
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:background="@drawable/calc2"
+            android:background="@drawable/textov"
             android:layout_height="wrap_content"
             android:text="4"
             android:onClick="onNumberClick"/>
         <Button
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:background="@drawable/calc2"
+            android:background="@drawable/textov"
             android:layout_height="wrap_content"
             android:text="*"
             android:onClick="onOperationClick"/>
@@ -123,14 +124,14 @@
         <Button
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:background="@drawable/calc2"
+            android:background="@drawable/textov"
             android:layout_height="wrap_content"
             android:text="3"
             android:onClick="onNumberClick"/>
         <Button
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:background="@drawable/calc2"
+            android:background="@drawable/textov"
             android:layout_height="wrap_content"
             android:text="2"
             android:onClick="onNumberClick"/>
@@ -139,14 +140,14 @@
             android:layout_width="12dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/calc2"
+            android:background="@drawable/textov"
             android:onClick="onNumberClick"
             android:text="1" />
 
         <Button
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:background="@drawable/calc2"
+            android:background="@drawable/textov"
             android:layout_height="wrap_content"
             android:text="-"
             android:onClick="onOperationClick"/>
@@ -159,31 +160,34 @@
         app:layout_constraintTop_toBottomOf="@+id/thirdButtonPanel"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent">
+
         <Button
-            android:layout_weight="1"
             android:layout_width="0dp"
-            android:background="@drawable/calc2"
             android:layout_height="wrap_content"
-            android:text="0"
-            android:onClick="onNumberClick"/>
-        <Button
             android:layout_weight="1"
+            android:background="@drawable/textov"
+            android:onClick="onNumberClick"
+            android:text="," />
+
+        <Button
             android:layout_width="0dp"
-            android:background="@drawable/calc2"
             android:layout_height="wrap_content"
-            android:text=","
-            android:onClick="onNumberClick"/>
+            android:layout_weight="1"
+            android:background="@drawable/textov"
+            android:onClick="onNumberClick"
+            android:text="0" />
+
         <Button
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:background="@drawable/calc2"
+            android:background="@drawable/textov"
             android:layout_height="wrap_content"
             android:text="="
             android:onClick="onOperationClick"/>
         <Button
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:background="@drawable/calc2"
+            android:background="@drawable/textov"
             android:layout_height="wrap_content"
             android:text="+"
             android:onClick="onOperationClick"/>
@@ -194,14 +198,16 @@
         android:id="@+id/nextbtn"
         android:layout_width="125dp"
         android:layout_height="44dp"
+        android:layout_marginBottom="200dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="332dp"
+
+
         android:fontFamily="cursive"
         android:onClick="onClick"
-        android:text="Back"
+        android:text="НАЗАД"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="InvalidId,MissingConstraints,OnClick" />
 
@@ -209,12 +215,13 @@
         android:id="@+id/buttonback"
         android:layout_width="93dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="332dp"
+        android:layout_marginBottom="200dp"
+        android:layout_marginStart="100dp"
         android:onClick="onCLickD"
-        android:text="Delete"
+        android:text="clear"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints,OnClick" />
 
